@@ -15,7 +15,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="exercice"
+        name="exo"
         options={{
           title: "Exercice",
         }}
