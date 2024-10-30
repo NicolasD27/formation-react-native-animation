@@ -185,10 +185,26 @@ export default function Home() {
         <TouchableOpacity onPress={toggleEnlarge} style={styles.button}>
           <Text style={styles.text}>Toggle Enlarge</Text>
         </TouchableOpacity>
-        <ToggleButton value={isWithDelay} setValue={setIsWithDelay} />
-        <ToggleButton value={isWithRepeat} setValue={setIsWithRepeat} />
-        <ToggleButton value={isWithDecay} setValue={setIsWithDecay} />
-        <ToggleButton value={isWithSpring} setValue={setIsWithSpring} />
+        <ToggleButton
+          value={isWithDelay}
+          setValue={setIsWithDelay}
+          label={"Enable With Delay"}
+        />
+        <ToggleButton
+          value={isWithRepeat}
+          setValue={setIsWithRepeat}
+          label={"Enable With Repeat"}
+        />
+        <ToggleButton
+          value={isWithDecay}
+          setValue={setIsWithDecay}
+          label={"Enable With Decay"}
+        />
+        <ToggleButton
+          value={isWithSpring}
+          setValue={setIsWithSpring}
+          label={"Enable With Spring"}
+        />
         <TouchableOpacity onPress={handleSequence} style={styles.button}>
           <Text style={styles.text}>Trigger Sequence</Text>
         </TouchableOpacity>

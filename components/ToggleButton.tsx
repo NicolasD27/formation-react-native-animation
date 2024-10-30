@@ -2,9 +2,11 @@ import { Dispatch, SetStateAction } from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export const ToggleButton = ({
+  label,
   value,
   setValue,
 }: {
+  label: string;
   value: boolean;
   setValue: Dispatch<SetStateAction<boolean>>;
 }) => {
@@ -20,7 +22,7 @@ export const ToggleButton = ({
           color: "white",
         }}
       >
-        Enable With Spring
+        {label}
       </Text>
     </TouchableOpacity>
   );
