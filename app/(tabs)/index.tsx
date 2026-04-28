@@ -63,15 +63,15 @@ export default function Home() {
       }),
       withDelay(
         500,
-        withTiming(-100, { duration: 500, easing: Easing.inOut(Easing.quad) })
+        withTiming(-100, { duration: 500, easing: Easing.inOut(Easing.quad) }),
       ),
       withDelay(
         500,
         withTiming(0, {
           duration: 500,
           easing: Easing.inOut(Easing.quad),
-        })
-      )
+        }),
+      ),
     );
     translateY.value = withSequence(
       withDelay(
@@ -79,19 +79,19 @@ export default function Home() {
         withTiming(100, {
           duration: 500,
           easing: Easing.inOut(Easing.quad),
-        })
+        }),
       ),
       withDelay(
         500,
-        withTiming(-100, { duration: 500, easing: Easing.inOut(Easing.quad) })
+        withTiming(-100, { duration: 500, easing: Easing.inOut(Easing.quad) }),
       ),
       withDelay(
         500,
         withTiming(0, {
           duration: 500,
           easing: Easing.inOut(Easing.quad),
-        })
-      )
+        }),
+      ),
     );
   };
 
@@ -170,7 +170,7 @@ export default function Home() {
   const composed = Gesture.Simultaneous(
     panGesture,
     scaleGesture,
-    rotationGesture
+    rotationGesture,
   );
 
   return (
